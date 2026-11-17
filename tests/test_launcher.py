@@ -32,7 +32,8 @@ class LauncherTests(unittest.TestCase):
         source = folder / "stub.py"
         source.write_text("from pathlib import Path\nimport sys\np=Path(sys.argv[1]);p.mkdir(parents=True);(p/'result.tsv').write_text('value\\n7\\n');raise SystemExit(" + str(exit_code) + ")\n")
         return replace(self.targets["damid_continuous"], id="stub", script=str(source),
-                       arguments="{out}", inputs="", outputs="{out}/result.tsv")
+                       arguments="{out}", inputs="", outputs="{out}/result.tsv",
+                       python_packages="", r_packages="")
 
     def test_external_inputs_and_source_dependencies(self):
         selected = launcher.select_targets(self.args(target=["all"]), self.targets)

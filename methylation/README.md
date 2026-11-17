@@ -14,7 +14,7 @@ These analyses start from the 21 supplied CpG reports, including baseline, 1 h, 
 | 8. Relate methylation to RNA | `gene_overlap/prepare_methylation_rna_inputs.py`, `../rna/continuous/` | Coordinate-matched promoter/body measurements and gene counts → TPM associations, OLS regressions and plotting values |
 | 9. Draw panels | `figures/`, `loci/` | Generated methylation measurements → Main 4–6 and supplementary panels |
 
-The original interval builder produces the 21,819 gene bodies used in the profiles. Promoter-DMG assignment uses the transcript-promoter definitions in `promoters/`; TE-context feature construction is a separate analysis. Scientific thresholds remain in the corresponding source scripts and configurations.
+Gene bodies are connected transcript spans from the RefGene annotation. The average profiles use 21,819 loci of at least 2 kb; gene-body methylation tests use the same coordinate construction without a minimum-length filter. RNA matching requires a unique gene assignment with matching name, chromosome, strand and overlapping coordinates.
 
 The root `common/staging.tsv` places the shared helpers where the source-layout scripts expect them. Path and sample helpers are in `methylation/common/`. Use `python run.py plan --dataset wgbs` to inspect the command and input/output contracts. `cpg_processing/align_bismark.sh` records the Read 1 alignment options used before the supplied CpG reports.
 

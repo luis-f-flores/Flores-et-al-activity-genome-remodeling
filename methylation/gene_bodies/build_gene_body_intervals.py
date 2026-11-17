@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build the gene-body intervals used for the methylation profiles.
+"""Build connected RefGene loci for gene-body methylation analyses.
 
 Group transcripts by GTF gene_id, chromosome and strand, separating disconnected
-transcript components. Retain loci spanning at least 2 kb. The seven BED columns
+transcript components. Apply the requested minimum length. The seven BED columns
 are chromosome, start, end, locus_id, score, strand and gene_name.
 """
 from __future__ import annotations
@@ -165,11 +165,14 @@ def main():
     parser.add_argument("--gtf", required=True, type=Path)
     parser.add_argument("--fai", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--min-length", type=int, default=2000)
     args = parser.parse_args()
+    if args.min_length < 0:
+        parser.error("--min-length must be nonnegative")
     components, _ = parse_gtf(args.gtf, load_fai(args.fai))
     rows = [
         (x["chrom"], x["start0"], x["end0"], x["locus_id"], 0, x["strand"], x["gene_name"])
-        for x in components if x["end0"] - x["start0"] >= 2000
+        for x in components if x["end0"] - x["start0"] >= args.min_length
     ]
     rows.sort(key=lambda x: (x[0], x[1], x[2], x[3]))
     args.output.parent.mkdir(parents=True, exist_ok=True)
