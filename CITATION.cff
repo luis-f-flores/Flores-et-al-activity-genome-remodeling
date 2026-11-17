@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this code repository and the accompanying paper when using these analyses."
+type: software
+title: "Neuronal activity reshapes genome–lamina interactions and the DNA methylome alongside distinct transcriptional responses: analysis code"
+authors:
+  - family-names: Flores
+    given-names: Luis F.
+license: MIT
+keywords:
+  - neuronal activity
+  - DNA methylation
+  - Lamin B1
+  - lamina-associated domains
+  - transposable elements

@@ -1,0 +1,11 @@
+key	value
+analysis_state	ready
+design_mode	unpaired
+contrast_numerator	KCl
+contrast_denominator	Mannitol
+prefilter_min_count	10
+prefilter_min_samples	3
+alpha	0.05
+primary_normalization	mapped_fragments
+primary_count	final_count
+lfc_shrinkage	apeglm

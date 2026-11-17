@@ -1,0 +1,8 @@
+program	recorded_version
+bowtie2	/usr/bin/bowtie2-align-s version 2.4.4
+bowtie2-build	/usr/bin/bowtie2-build-s version 2.4.4
+samtools	samtools 1.13
+cutadapt	5.0
+trim_galore	
+fastqc	FastQC v0.12.1
+multiqc	multiqc, version 1.12

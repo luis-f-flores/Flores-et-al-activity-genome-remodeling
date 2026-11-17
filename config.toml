@@ -1,0 +1,22 @@
+# Paths resolve relative to this repository, regardless of the current directory.
+# Keep scientific parameters in their existing source scripts and input configs.
+[paths]
+data_root = "../inputs"
+work_root = "../work"
+output_root = "../results"
+font_dir = "" # Auto-detect Windows Arial or msttcorefonts; --fonts overrides this.
+
+# Each value is an argv array, so paths containing spaces need no shell quoting.
+# Empty Python arrays use the interpreter running run.py; plot/pdf inherit python.
+# For separate existing environments, pass --config /path/to/private/local.toml.
+# Example override: pdf_python = ["/path/to/pdf-environment/bin/python"]
+# Example WSL R: rscript = ["wsl.exe", "-d", "Ubuntu", "--", "Rscript"]
+[runtime]
+python = []
+plot_python = []
+pdf_python = []
+rscript = ["Rscript"]
+bash = ["bash"]
+legacy_hmm_python = [] # pomegranate 0.11.1 training environment.
+
+[inputs]

@@ -1,0 +1,6 @@
+dmg_symbol	rna_gene_name	rna_gene_id	reason	evidence
+Get1	Wrb	ENSMUSG00000023147	verified alias	https://www.ncbi.nlm.nih.gov/gene/71446
+Tdpoz8	Gm4858	ENSMUSG00000096879	verified alias; no corresponding 6hr RNA comparison row	https://www.ncbi.nlm.nih.gov/gene/229571
+Gcn1	Gcn1l1	ENSMUSG00000041638	verified alias	https://www.informatics.jax.org/marker/MGI%3A2444248
+Gm3704	1700028E10Rik	ENSMUSG00000097321	verified gene-ID annotation correspondence	https://www.ncbi.nlm.nih.gov/gene/100042166
+4930594M22Rik	4930594M22Rik	ENSMUSG00000075463	resolve duplicate symbol by promoter locus	DMR chr14:122912251-122912750 lies upstream of ENSMUSG00000075463 TSS 122913030; other same-name ID ENSMUSG00000085423 starts 122952119

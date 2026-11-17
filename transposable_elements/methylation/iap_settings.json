@@ -1,0 +1,22 @@
+{
+  "seed": 20261031,
+  "permutations": 20000,
+  "bootstrap": 5000,
+  "block_bp": 20000000,
+  "pre_pool": 2500,
+  "pre_min": 1000,
+  "final_min": 100,
+  "max_proposals": 2000000,
+  "context": "external/te_methylation_context.tsv.gz",
+  "rna": "external/DE_KCl_vs_Mannitol_final_count.tsv.gz",
+  "dmrs": "external/6M_vs_6K_Merged_DMRs_cov4_hypo.txt",
+  "tested_windows": "external/DMRs_all_unfiltered_win_500bp.txt",
+  "genes": "external/genes.bed",
+  "exons": "external/exons.bed",
+  "promoters": "external/promoters_-1kb_+100bp.bed",
+  "kcl_bw": "external/16_genomewide_KCl_6hr_mean_pct_meth.bw",
+  "mann_bw": "external/16_genomewide_Mannitol_6hr_mean_pct_meth.bw",
+  "bismap": "external/k100.Bismap.MultiTrackMappability.bw",
+  "raw_reports": "external/raw_cpg_reports",
+  "exact_pool_cap": 10000
+}

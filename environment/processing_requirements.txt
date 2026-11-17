@@ -1,0 +1,11 @@
+intervaltree
+joblib
+openpyxl
+pdfplumber
+pyBigWig
+pybedtools
+pyfaidx
+pysam
+scikit-learn
+statsmodels
+tqdm

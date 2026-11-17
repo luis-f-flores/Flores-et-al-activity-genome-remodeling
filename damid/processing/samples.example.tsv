@@ -1,0 +1,17 @@
+sample	bam	reference	hours	condition
+6A-DBK	bams/6A-DBK.bam	mouse	6	KCl
+6A-DBM	bams/6A-DBM.bam	mouse	6	Man
+6A-DK	bams/6A-DK.bam	mouse	6	KCl
+6A-DM	bams/6A-DM.bam	mouse	6	Man
+6B-DBK	bams/6B-DBK.bam	mouse	6	KCl
+6B-DBM	bams/6B-DBM.bam	mouse	6	Man
+6B-DK	bams/6B-DK.bam	mouse	6	KCl
+6B-DM	bams/6B-DM.bam	mouse	6	Man
+24A-DBK	bams/24A-DBK.bam	mouse	24	KCl
+24A-DBM	bams/24A-DBM.bam	mouse	24	Man
+24A-DK	bams/24A-DK.bam	mouse	24	KCl
+24A-DM	bams/24A-DM.bam	mouse	24	Man
+24B-DBK	bams/24B-DBK.bam	mouse	24	KCl
+24B-DBM	bams/24B-DBM.bam	mouse	24	Man
+24B-DK	bams/24B-DK.bam	mouse	24	KCl
+24B-DM	bams/24B-DM.bam	mouse	24	Man

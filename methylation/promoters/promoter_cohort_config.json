@@ -1,0 +1,30 @@
+{
+  "package_root": "..",
+  "promoter_features": "../LF_Neuron_WGBS_CpG_Report/gtf_dmrs_features_minus1kb_plus100bp.rds",
+  "gene_overrides": "R/promoter_gene_id_overrides.tsv",
+  "master_fpkm": "rna_seq/gene_fpkm.xls",
+  "deg_padj": 0.01,
+  "deg_fold_change": 1.3,
+  "dmg_qvalue": 0.01,
+  "dmg_delta": 25,
+  "timepoints": {
+    "1": {
+      "rna": "rna_seq/Hour_1_KClvsHour_1_Mann_deg.xls",
+      "tested_windows": "wgbs/methylKit_DMR/DMR_1M_vs_1K_multiwindow/DMR_win_500bp/DMRs_all_unfiltered_win_500bp.txt",
+      "hyper": "wgbs/methylKit_DMR/DMG_overlap/Promoter_DMGs/Results_with_5meth_q05/DMGs_q01_meth25_from_DMRs_q05meth5/1M_vs_1K_hyper_Promoter_DMRs_ForVolcano_meth25_q01.txt",
+      "hypo": "wgbs/methylKit_DMR/DMG_overlap/Promoter_DMGs/Results_with_5meth_q05/DMGs_q01_meth25_from_DMRs_q05meth5/1M_vs_1K_hypo_Promoter_DMRs_ForVolcano_meth25_q01.txt"
+    },
+    "6": {
+      "rna": "rna_seq/Hour_6_KClvsHour_6_Mann_deg.xls",
+      "tested_windows": "wgbs/methylKit_DMR/DMR_6M_vs_6K_multiwindow/DMR_win_500bp/DMRs_all_unfiltered_win_500bp.txt",
+      "hyper": "wgbs/methylKit_DMR/DMG_overlap/Promoter_DMGs/Results_with_5meth_q05/DMGs_q01_meth25_from_DMRs_q05meth5/6M_vs_6K_hyper_Promoter_DMRs_ForVolcano_meth25_q01.txt",
+      "hypo": "wgbs/methylKit_DMR/DMG_overlap/Promoter_DMGs/Results_with_5meth_q05/DMGs_q01_meth25_from_DMRs_q05meth5/6M_vs_6K_hypo_Promoter_DMRs_ForVolcano_meth25_q01.txt"
+    },
+    "24": {
+      "rna": "rna_seq/Hour_24_KClvsHour_24_Mann_deg.xls",
+      "tested_windows": "wgbs/methylKit_DMR/DMR_24M_vs_24K_multiwindow/DMR_win_500bp/DMRs_all_unfiltered_win_500bp.txt",
+      "hyper": "wgbs/methylKit_DMR/DMG_overlap/Promoter_DMGs/Results_with_5meth_q05/DMGs_q01_meth25_from_DMRs_q05meth5/24M_vs_24K_hyper_Promoter_DMRs_ForVolcano_meth25_q01.txt",
+      "hypo": "wgbs/methylKit_DMR/DMG_overlap/Promoter_DMGs/Results_with_5meth_q05/DMGs_q01_meth25_from_DMRs_q05meth5/24M_vs_24K_hypo_Promoter_DMRs_ForVolcano_meth25_q01.txt"
+    }
+  }
+}
